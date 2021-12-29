@@ -65,17 +65,35 @@
 
     <div class="info">
         <h3> <span> Nom : </span> Amagaraï GUINDO </h3>
-        <h3> <span> age : </span> 23 </h3>
-        <h3> <span> post : </span> front end developer </h3>
-        <h3> <span> langue : </span> Français </h3>
+        <h3> <span> Age : </span> 23 </h3>
+        <h3> <span> Profession : </span> front end developer </h3>
+        <h3> <span> Langue : </span>  </h3>
+        <div class="container">
+            <div class="bar">
+                <div class="bar-stat" id="html">
+                    <span class="bar-text">Bambara - 100%</span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="bar-stat" id="css">
+                    <span class="bar-text">Français - 92%</span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="bar-stat" id="js">
+                    <span class="bar-text">Anglais - 45%</span>
+                </div>
+            </div>
+        </div>
+
         <a href="#"><button class="btn"> Telecharger CV <i class="fas fa-download"></i> </button></a>
     </div>
-    <div class="counter"> 
-        <div class="box">
-            <span>Competance</span>
+    <div class="counter" id="counter">  
+        <div class="compt">
+            <p>Competance</p>
         </div>
         
-        <div class="box">
+        <div class="box" id="ionic">
             <span>Ionic</span>
         </div>
 
@@ -91,13 +109,49 @@
             <span>Firbase</span>
         </div>
         <div class="box">
-            <span>Firbase</span>
+            <span>HTML</span>
         </div>
         <div class="box">
-            <span>Firbase</span>
+            <span>CSS</span>
+            <a href="#" onclick="toggle()" class="fas fa-plus">Plus</a>
         </div>
-
+        
     </div>
+    <div id="popup">
+        <div>
+            <h2>Langages</h2>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>Angular</li>
+            </ul>
+            <h2>Framework</h2>
+            <ul>
+                <li>Bootstrap</li>
+                <li>Spring Boot</li>
+                <li>Ionic</li>
+            </ul>
+            <h2>CMS</h2>
+            <ul>
+                <li>WordPress</li>
+            </ul>
+            <h2>Environement </h2>
+            <ul>
+                <li>Node js</li>
+                <li>Firebase</li>
+                <li>Git</li>
+            </ul>
+            <h2>Outils</h2>
+            <ul>
+                <li>Adobe xd</li>
+                <li>Figma</li>  
+            </ul>
+        </div>
+        <a href="#" onclick="toggle()" >Fermer</a>
+    </div>
+    
 
 </div>
 
@@ -150,20 +204,20 @@
 
 <section class="portfolio" id="portfolio">
 
-<h1 class="heading"> my <span>portfolio</span> </h1>
+<h1 class="heading"> Mon <span>portfolio</span> </h1>
 
 <div class="box-container">
 
     <div class="box">
-        <img src="images/img1.jpg" alt="">
+        <img src="img1.png" alt="">
     </div>
 
     <div class="box">
-        <img src="images/img2.jpg" alt="">
+        <img src="img2.jpg" alt="">
     </div>
 
     <div class="box">
-        <img src="images/img3.jpg" alt="">
+        <img src="img3.png" alt="">
     </div>
 
     <div class="box">

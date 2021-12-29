@@ -180,11 +180,11 @@ header .navbar ul li a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:1rem 0;
+    /* padding:1rem 0; */
 }
 
 .about .row .info{
-    flex:1 1 48rem;
+    flex:1 1 35rem;
     padding:2rem 1rem;
     padding-left: 6rem;
 }
@@ -198,7 +198,47 @@ header .navbar ul li a:hover{
 
 .about .row .info h3 span{
     color:#eee;
-    padding:0 .5rem;
+    /* padding:0 .5rem; */
+}
+.about .row .info .container{
+    height: auto;
+    width: 60%;
+    border-radius: 3px;
+    box-shadow: 0 0 25px #000;
+    /* padding: 10px 80px 40px; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.bar {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    box-shadow: inset 5px 5px 10px #2c2c2c, 
+            inset -5px -5px 10px #5c5c5c;
+}
+
+.bar-stat{
+    padding: 3px 10px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #000;
+    color: black;
+}
+
+#html{
+    background: var(--yellow);
+    animation: htmlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+#css{
+    background: var(--yellow);
+    animation: cssSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+#js{
+    background: var(--yellow);
+    animation: jsSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
 .about .row .counter{
@@ -208,22 +248,71 @@ header .navbar ul li a:hover{
     flex-wrap: wrap;
 }
 
+.about .row .counter#counter.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.compt{
+    color: #f9ca24;
+    margin-left: 17rem;
+    font-size: 3rem;
+    text-align: center;
+    
+} 
+
 .about .row .counter .box{
     width:20rem;
     background:#222;
     text-align: center; 
-    padding: 2rem;
+    padding: 1rem;
     margin:1rem;
 }
 
 .about .row .counter .box span{
-    font-size: 4rem;
-    color:var(--yellow);
+    font-size: 1.2rem;
+    color:white;
 }
 
-.about .row .counter .box h3{
-    font-size: 2rem;
-    color:#fff;
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgb(0, 0, 30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popup div h2{
+    font-size: 17px;
+    color: var(--yellow);
+}
+#popup div ul li{
+    color: black;
+    font-size: 12px;
+}
+
+#popup a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background: #f9ca24;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
 }
 
 .education .box-container{
@@ -380,7 +469,21 @@ header .navbar ul li a:hover{
 
 
 
+/* bar de progresion */
+@keyframes htmlSlide{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
 
+@keyframes cssSlide{
+    0%{width: 0%;}
+    100%{width: 92%;}
+}
+
+@keyframes jsSlide{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
 
 
 

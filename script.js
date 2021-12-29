@@ -36,3 +36,12 @@ $(document).ready(function(){
   });
 
 });
+
+//poppup
+function toggle(){
+  var popup = document.getElementById('counter');
+  popup.classList.toggle('active');
+
+  var visibl= document.getElementById('popup');
+  visibl.classList.toggle('active');
+}
